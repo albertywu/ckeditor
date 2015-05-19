@@ -1,6 +1,6 @@
 {
 	"name": "ckeditor-awu",
-  	"version": "1.0.0",
+  	"version": "1.1.0",
 	"description": "JavaScript WYSIWYG web text editor.",
 	"keywords": [ "ckeditor", "fckeditor", "editor", "wysiwyg", "html", "richtext", "text", "javascript" ],
 	"authors": "albertywu@gmail.com",
