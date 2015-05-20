@@ -11,21 +11,30 @@ CKEDITOR.editorConfig = function( config ) {
 	config.toolbar = null;
 
 	config.toolbarGroups = [
-		{ name: 'basic', groups: ['basicstyles', 'list', 'indent', 'undo', 'mode'] }
+		{ name: 'basic', groups: ['basicstyles', 'cleanup', 'list', 'indent', 'undo', 'mode'] }
 	];
 
 	// Remove some buttons from toolbar
 	config.removeButtons = 'Strike,Subscript,Superscript';
 
+	config.extraPlugins = 'removeformat,indentblock,sharedspace';
+
 	// Remove plugins
-	config.removePlugins = 'elementspath,iframe,iframedialog,justify,language,mathjax,newpage,pagebreak,placeholder,preview,save,scayt,showblocks,smiley,stylesheetparser,templates,widget,wsc,uicolor,adobeair,magicline,maximize,resize';
+	//config.removePlugins = 'elementspath,iframe,iframedialog,justify,language,mathjax,newpage,pagebreak,placeholder,preview,save,scayt,showblocks,smiley,stylesheetparser,templates,widget,wsc,uicolor,adobeair,magicline,maximize,resize';
+	config.removePlugins = 'elementspath,showblocks,magicline,maximize,resize';
 
 	// Simplify the dialog windows
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 
-	// Set the most common block elements.
-	config.format_tags = 'p;h1;h2;h3;pre';
+	// Preserve Word styles
+	config.pasteFromWordRemoveFontStyles = false;
+	config.pasteFromWordRemoveStyles = false;
+
+	// Whitelist these DOM elements
+	config.extraAllowedContent = 'table tbody tr td h1 h2; img a [*]';
 
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
+
+
 };

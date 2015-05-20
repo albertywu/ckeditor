@@ -219,6 +219,9 @@ a.cke_button_off:active
 .cke_button__redo_icon { background-position: -320px -96px !important; }
 .cke_button_on .cke_button__redo_icon { background-position: -320px -116px !important; }
 
+.cke_button__removeformat_icon { background-position: -120px -96px !important; }
+.cke_button_on .cke_button__removeformat_icon { background-position: -120px -116px !important; }
+
 .cke_button__source_icon { background-position: -100px -96px !important; }
 .cke_button_on .cke_button__source_icon { background-position: -100px -96px !important; opacity: 1; }
 
